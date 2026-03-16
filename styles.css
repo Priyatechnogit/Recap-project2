@@ -9,3 +9,26 @@ body {
   background-color: #4CAF50;
   color: white;
 }
+
+/*Here is the style for Question container*/
+
+.question-container {
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.bookmark {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
