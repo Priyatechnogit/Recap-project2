@@ -11,65 +11,67 @@
         <h1>Quiz App</h1>
         <p>Master your knowledge with the interactive Quiz</p>
     </header>
-      <main class="question-card">
-        <article class="card ">
-            <h2>Question?</h2>
-            <button class="bookmark"><img src="./assets/bookmark.svg" alt=""></button>
+    
+    <main class="question-card">
+        <article class="card" id="q1">
+            <h2>What does HTML stand for?</h2>
+            <a href="#bookmark1" class="bookmark-link">
+                <button class="bookmark" aria-pressed="false"><img src="./assets/bookmark.svg" alt="Bookmark"></button>
+            </a>
             <p hidden class="answer">HTML stands for Hypertext Markup Language.</p>
             <button>Show Answer</button>
             <ul class="tags">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>Flexbox</li>
-  </ul>
-
+                <li>HTML</li><li>CSS</li><li>Flexbox</li>
+            </ul>
         </article>
-
-         <article class="card ">
-            <h2>Question?</h2>
-            <button class="bookmark"><img src="./assets/bookmark.svg" alt=""></button>
-            <p hidden class="answer">HTML stands for Hypertext Markup Language.</p>
-            <button>Show Answer</button>
-             <ul class="tags">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>Flexbox</li>
-  </ul>
-            
-        </article>
-
-         <article class="card ">
-            <h2>Question?</h2>
-            <button class="bookmark"><img src="./assets/bookmark.svg" alt=""></button>
+        <article class="card" id="q2">
+            <h2>What does CSS stand for?</h2>
+            <a href="#bookmark2" class="bookmark-link">
+       <button class="bookmark active" aria-pressed="true">
+            <img src="./assets/bookmark.svg" alt="Remove Bookmark">
+        </button>
+    </a>
+</a>
             <p hidden class="answer">HTML stands for Hypertext Markup Language.</p>
             <button>Show Answer</button>
             <ul class="tags">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>Flexbox</li>
-  </ul>
-            
+                <li>HTML</li><li>CSS</li><li>Flexbox</li>
+            </ul>
         </article>
 
-         <article class="card ">
-            <h2>Question?</h2>
-            <button class="bookmark"><img src="./assets/bookmark.svg" alt=""></button>
-            <p hidden class="answer">HTML stands for Hypertext Markup Language.</p>
+        
+
+        <article class="card" id="q3">
+            <h2>What is Flexbox used for?</h2>
+            <a href="#bookmark3" class="bookmark-link">
+                <button class="bookmark" aria-pressed="false"><img src="./assets/bookmark.svg" alt="Bookmark"></button>
+            </a>
+            <p hidden class="answer">Flexbox is a CSS layout module.</p>
             <button>Show Answer</button>
             <ul class="tags">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>Flexbox</li>
-  </ul>
-            
+                <li>HTML</li><li>CSS</li><li>Flexbox</li>
+            </ul>
         </article>
 
-
-      </main>
-      <nav class="navbar">
-        <a href="index.html"><img src="assets/house.svg" alt=""></a>
-        <a href="bookmarks.html"><img src="assets/bookmark.svg" alt=""></a>
-        <a href="profile.html"><img src="assets/circle-user-round.svg" alt=""></a>
-      </nav>
+        <article class="card" id="q4">
+            <h2>What does JS stand for?</h2>
+             <a href="#bookmark4" class="bookmark-link">
+       <button class="bookmark active" aria-pressed="true">
+            <img src="./assets/bookmark.svg" alt="Remove Bookmark">
+        </button>
+    </a>
+            <p hidden class="answer">JS stands for JavaScript.</p>
+            <button>Show Answer</button>
+            <ul class="tags">
+                 <li>HTML</li><li>CSS</li><li>Flexbox</li>
+            </ul>
+        </article>
+    </main>
+    
+    <nav class="navbar">
+        <a href="index.html"><img src="assets/house.svg" alt="Home"></a>
+        <a href="bookmarks.html"><img src="assets/bookmark.svg" alt="Bookmarks"></a>
+        <a href="profile.html"><img src="assets/circle-user-round.svg" alt="Profile"></a>
+    </nav>
 </body>
 </html>
