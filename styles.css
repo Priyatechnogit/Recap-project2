@@ -86,12 +86,14 @@ body.form-page main {
   margin: 0 0 1rem 0;
   font-weight: 600;
   font-size: 1.25rem;
+  text-align: center;
 }
 
 .card__answer {
   margin: 0.75rem 0 1rem 0;
   font-size: 1rem;
   line-height: 1.4;
+  text-align: center;
 }
 
 .card__answer.hidden {
@@ -139,6 +141,7 @@ body.form-page main {
   cursor: pointer;
   align-self: flex-start;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .answer-btn:hover {
