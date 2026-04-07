@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Question - Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="form-page">
+
+<header class="app-header">
+  <h1>Quiz App</h1>
+  <p>Add New Question</p>
+</header>
+
+<main class="form-container">
+  <form id="questionForm" class="form-card">
+
+    <label>Your question:</label>
+    <textarea id="questionInput" maxlength="150"></textarea>
+    <div id="questionCounter">150 characters left</div>
+
+    <label>Your answer:</label>
+    <textarea id="answerInput" maxlength="150"></textarea>
+    <div id="answerCounter">150 characters left</div>
+
+    <label>Tag:</label>
+    <input type="text" id="tagInput">
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+
+  <div id="newCards"></div>
+</main>
+
+<nav class="navbar">
+  <a href="index.html" class="navbar__link">
+    <img class="navbar__icon" src="assets/house.svg">
+  </a>
+  <a href="bookmarks.html" class="navbar__link">
+    <img class="navbar__icon" src="assets/bookmark.svg">
+  </a>
+  <a href="form.html" class="navbar__link navbar__link--active">
+    <img class="navbar__icon" src="assets/plus-square-svgrepo-com.svg">
+  </a>
+  <a href="profile.html" class="navbar__link">
+    <img class="navbar__icon" src="assets/circle-user-round.svg">
+  </a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>

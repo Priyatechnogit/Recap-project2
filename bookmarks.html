@@ -1,51 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookmarks - Interactive Quiz</title>
-    <link rel="stylesheet" href="styles.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bookmarks - Quiz App</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header class="app-header">
-        <h1>Quiz App</h1>
-        <p>Here is Your bookmarked questions!!!!</p>
-    </header>
-    
-    <main class="question-card">
-        <!-- ONLY bookmarked questions - Q2 & Q4 with ACTIVE state -->
-       <article class="card" id="q2">
-            <h2>What does CSS stand for?</h2>
-            <a href="#q2" class="bookmark-link">
-                <button class="bookmark active" aria-pressed="true">
-                    <img src="./assets/bookmark.svg" alt="Remove Bookmark">
-                </button>
-            </a>
-            <p hidden class="answer">CSS stands for Cascading Style Sheets.</p>
-            <button>Show Answer</button>
-            <ul class="tags">
-                <li>HTML</li><li>CSS</li><li>Flexbox</li>
-            </ul>
-        </article>
+  <header class="app-header">
+    <h1>Quiz App</h1>
+  </header>
 
-        <article class="card" id="q4">
-            <h2>What does JS stand for?</h2>
-            <a href="#q4" class="bookmark-link">
-                <button class="bookmark active" aria-pressed="true">
-                    <img src="./assets/bookmark.svg" alt="Remove Bookmark">
-                </button>
-            </a>
-            <p hidden class="answer">JS stands for JavaScript.</p>
-            <button>Show Answer</button>
-            <ul class="tags">
-                <li>HTML</li><li>CSS</li><li>Flexbox</li>
-            </ul>
-        </article>
-          <nav class="navbar">
-        <a href="index.html"><img src="assets/house.svg" alt="Home"></a>
-        <a href="bookmarks.html"><img src="assets/bookmark.svg" alt="Bookmarks"></a>
-        <a href="profile.html"><img src="assets/circle-user-round.svg" alt="Profile"></a>
-    </nav>
+  <main class="quiz-main">
+    <!-- Bookmarked cards inserted by JS -->
+  </main>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar__link">
+      <img class="navbar__icon" src="./assets/house.svg" alt="Home" />
+    </a>
+    <a href="bookmarks.html" class="navbar__link navbar__link--active" aria-current="page">
+      <img class="navbar__icon" src="./assets/bookmark.svg" alt="Bookmarks" />
+    </a>
+    <a href="form.html" class="navbar__link">
+      <img class="navbar__icon" src="./assets/plus-square-svgrepo-com.svg" alt="Add Question" />
+    </a>
+    <a href="profile.html" class="navbar__link">
+      <img class="navbar__icon" src="./assets/circle-user-round.svg" alt="Profile" />
+    </a>
+  </nav>
+
+  <script src="script.js"></script>
 </body>
 </html>
