@@ -1,84 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Quiz</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz App - Home</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header class="app-header">
-        <h1>Quiz App</h1>
-        <p>Master your knowledge with the interactive Quiz</p>
-    </header>
- 
-    <main class="question-card">
-        <!-- FIRST QUESTION CARD - JavaScript functionality will be applied here -->
-        <article class="card" id="q1">
-            <h2>What does HTML stand for?</h2>
-            <a href="#bookmark1" class="bookmark-link">
-                <button class="bookmark" id="bookmark1" aria-pressed="false">
-                    <img src="./assets/bookmark.svg" alt="Bookmark">
-                </button>
-            </a>
-            <p class="card__answer hidden" id="answer1">HTML stands for Hypertext Markup Language.</p>
-            <button class="answer-btn" id="answerBtn1">Show Answer</button>
-            <ul class="tags">
-                <li>HTML</li><li>CSS</li><li>Flexbox</li>
-            </ul>
-        </article>
+  <header class="app-header">
+    <h1>Quiz App</h1>
+  </header>
 
-        <article class="card" id="q2">
-            <h2>What does CSS stand for?</h2>
-            <a href="#bookmark2" class="bookmark-link">
-                <button class="bookmark active" id="bookmark2" aria-pressed="true">
-                    <img src="./assets/bookmark.svg" alt="Remove Bookmark">
-                </button>
-            </a>
-            <p class="card__answer hidden" id="answer2">CSS stands for Cascading Style Sheets.</p>
-            <button class="answer-btn" id="answerBtn2">Show Answer</button>
-            <ul class="tags">
-                <li>HTML</li><li>CSS</li><li>Flexbox</li>
-            </ul>
-        </article>
+  <main class="quiz-main">
+    <!-- Multiple question cards -->
+    <article class="card" data-id="q1">
+      <h2 class="card__question">What does HTML stand for?</h2>
+      <button class="bookmark" aria-pressed="false" aria-label="Bookmark question">
+        <img src="./assets/bookmark.svg" alt="Bookmark" />
+      </button>
+      <p class="card__answer hidden">
+        HTML stands for HyperText Markup Language.
+      </p>
+      <button class="answer-btn">Show Answer</button>
+    </article>
 
-        <article class="card" id="q3">
-            <h2>What is Flexbox used for?</h2>
-            <a href="#bookmark3" class="bookmark-link">
-                <button class="bookmark" id="bookmark3" aria-pressed="false">
-                    <img src="./assets/bookmark.svg" alt="Bookmark">
-                </button>
-            </a>
-            <p class="card__answer hidden" id="answer3">Flexbox is a CSS layout module designed for one-dimensional layouts.</p>
-            <button class="answer-btn" id="answerBtn3">Show Answer</button>
-            <ul class="tags">
-                <li>HTML</li><li>CSS</li><li>Flexbox</li>
-            </ul>
-        </article>
+    <article class="card" data-id="q2">
+      <h2 class="card__question">What does CSS stand for?</h2>
+      <button class="bookmark" aria-pressed="false" aria-label="Bookmark question">
+        <img src="./assets/bookmark.svg" alt="Bookmark" />
+      </button>
+      <p class="card__answer hidden">
+        CSS stands for Cascading Style Sheets.
+      </p>
+      <button class="answer-btn">Show Answer</button>
+    </article>
 
-        <article class="card" id="q4">
-            <h2>What does JS stand for?</h2>
-            <a href="#bookmark4" class="bookmark-link">
-                <button class="bookmark active" id="bookmark4" aria-pressed="true">
-                    <img src="./assets/bookmark.svg" alt="Remove Bookmark">
-                </button>
-            </a>
-            <p class="card__answer hidden" id="answer4">JS stands for JavaScript, a programming language for web development.</p>
-            <button class="answer-btn" id="answerBtn4">Show Answer</button>
-            <ul class="tags">
-                <li>HTML</li><li>CSS</li><li>JavaScript</li>
-            </ul>
-        </article>
-    </main>
- 
-    <nav class="navbar">
-        <a href="index.html"><img src="assets/house.svg" alt="Home"></a>
-        <a href="bookmarks.html"><img src="assets/bookmark.svg" alt="Bookmarks"></a>
-        <a href="form.html"><img src="assets/plus.svg" alt="Add"></a>
-        <a href="profile.html"><img src="assets/circle-user-round.svg" alt="Profile"></a>
-    </nav>
+    <!-- Add more cards similarly -->
+  </main>
 
-    <!-- Added the form.html and enhance the page with JavaScript functionality -->
-    <script src="script.js"></script>
+  <nav class="navbar">
+    <a href="index.html" class="navbar__link navbar__link--active" aria-current="page">
+      <img class="navbar__icon" src="./assets/house.svg" alt="Home" />
+    </a>
+    <a href="bookmarks.html" class="navbar__link">
+      <img class="navbar__icon" src="./assets/bookmark.svg" alt="Bookmarks" />
+    </a>
+    <a href="form.html" class="navbar__link">
+      <img class="navbar__icon" src="./assets/plus-square-svgrepo-com.svg" alt="Add Question" />
+    </a>
+    <a href="profile.html" class="navbar__link">
+      <img class="navbar__icon" src="./assets/circle-user-round.svg" alt="Profile" />
+    </a>
+  </nav>
+
+  <script src="script.js"></script>
 </body>
 </html>

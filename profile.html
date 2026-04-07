@@ -1,105 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Profile - Interactive Quiz</title>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="profile.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile - Quiz App</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <header class="app-header">
+    Quiz App
+  </header>
 
-<header class="app-header">
-<h1>Quiz App</h1>
-<p>Your Profile</p>
-</header>
+  <main class="profile-container">
+    <div class="profile-card">
+      <div class="profile-avatar">
+        <img src="./assets/1514826571.svg" alt="Profile Avatar" />
+      </div>
+      <h2 class="profile-name">Max Doe</h2>
 
-<!-- Dark mode checkbox -->
-<input type="checkbox" id="dark-toggle">
+      <section class="about-me">
+        <h3>About me</h3>
+        <p>I’m a passionate quiz lover and frontend developer dedicated to building fun and interactive learning experiences.</p>
+      </section>
 
-<main class="profile-container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span id="totalQuestions" class="stat-number">0</span>
+          Questions Created
+        </div>
+        <div class="stat-item">
+          <span id="bookmarkedCount" class="stat-number">0</span>
+          Bookmarks
+        </div>
+      </div>
 
-<div class="profile-card">
+      <div class="dark-mode-toggle">
+        <label for="dark-toggle">Dark Mode</label>
+        <input type="checkbox" id="dark-toggle" />
+      </div>
+    </div>
+  </main>
 
-<div class="profile-avatar"><img src="assets/developer_icon.svg" alt=""></div>
+  <nav class="navbar">
+    <a href="index.html" class="navbar__link">
+      <img src="./assets/house.svg" alt="Home" class="navbar__icon" />
+    </a>
+    <a href="bookmarks.html" class="navbar__link">
+      <img src="./assets/bookmark.svg" alt="Bookmarks" class="navbar__icon" />
+    </a>
+    <a href="form.html" class="navbar__link">
+      <img class="navbar__icon" src="./assets/plus-square-svgrepo-com.svg" alt="Add Question" />
+    </a>
+    <a href="profile.html" class="navbar__link navbar__link--active">
+      <img src="./assets/circle-user-round.svg" alt="Profile" class="navbar__icon" />
+    </a>
+  </nav>
 
-<h2 class="profile-name">John Doe</h2>
-
-<p class="profile-subtitle">
-Web Developer & Quiz Master
-</p>
-
-</div>
-
-
-<div class="profile-card">
-
-<div class="stats-grid">
-
-<div class="stat-item">
-<span class="stat-number">24</span>
-<span class="stat-label">Questions</span>
-</div>
-
-<div class="stat-item">
-<span class="stat-number">6</span>
-<span class="stat-label">Bookmarks</span>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="profile-card">
-
-<h3 class="section-title">About Me</h3>
-
-<p class="about-text">
-Passionate web developer who loves creating interactive learning experiences.
-I enjoy building quiz apps and sharing knowledge about HTML, CSS and modern web technologies.
-</p>
-
-</div>
-
-
-<div class="profile-card">
-
-<h3 class="section-title">Settings</h3>
-
-<div class="dark-mode-toggle">
-
-<span class="toggle-label">Dark Mode</span>
-
-<label for="dark-toggle" class="toggle-switch"></label>
-
-</div>
-
-</div>
-
-</main>
-
-
-<nav class="navbar">
-
-<a href="index.html">
-<img src="assets/house.svg" alt="Home">
-</a>
-
-<a href="bookmarks.html">
-<img src="assets/bookmark.svg" alt="Bookmarks">
-</a>
-
-<a href="profile.html">
-<img src="assets/circle-user-round.svg" alt="Profile">
-</a>
-
-</nav>
-
+  <script src="script.js"></script>
 </body>
 </html>
